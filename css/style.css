@@ -1,0 +1,35 @@
+.date {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;  
+  
+  .dateItem {
+    margin: 20px;
+    align-self: flex-end;
+  }
+}
+
+.hours {
+  margin-top: 80px
+}
+
+.calcs {
+  margin-top: 80px
+}
+
+.table th,
+.table td {
+  text-align: center;
+}
+
+.gray-bg {
+  background-color: #f0f0f0;
+}
+
+.warn {
+  background-color: #ffff00;
+}
+
+.wrong {
+  color: #ff0000;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora de pontos</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container date">
+      <div class="dateItem">
+        <label for="dateStart">Data de início</label>
+        <input
+          type="date"
+          id="dateStart"
+          name="dateStart"
+          class="form-control"
+        />
+      </div>
+      <div class="dateItem">
+        <label for="dateEnd">Data de término</label>
+        <input type="date" id="dateEnd" name="dateEnd" class="form-control" />
+      </div>
+      <div class="dateItem">
+        <button type="button" class="btn btn-primary" id="gerarCampos">
+          Gerar campos
+        </button>
+      </div>
+    </div>
+
+    <main>
+      <div class="container hours">
+        <table class="table" id="horariosTable">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col" colspan="2">Manhã</th>
+              <th scope="col" colspan="2">Tarde</th>
+              <th scope="col" colspan="2">Extra</th>
+              <th scope="col" colspan="3">Horas</th>
+            </tr>
+            <tr>
+              <th>Dia</th>
+              <th>Entrada</th>
+              <th>Saída</th>
+              <th>Entrada</th>
+              <th>Saída</th>
+              <th>Entrada</th>
+              <th>Saída</th>
+              <th>Total</th>
+              <th>Proposta</th>
+              <th>Extra</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container calcs">
+        <table class="table">
+          <tbody>
+            <tr>
+              <th>Horas a pagar</th>
+              <td id="totalToPay">00:00</td>
+            </tr>
+            <tr>
+              <th>Horas a receber</th>
+              <td id="totalToReceive">00:00</td>
+            </tr>
+            <tr>
+              <th>Saldo</th>
+              <td id="totalBalance">00:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/script.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
